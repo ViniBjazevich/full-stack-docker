@@ -4,11 +4,10 @@ List all docker images:
 ```
 docker images
 ```
-List all docker images:
+List all running containers:
 ```
-docker images
+docker ps
 ```
-<img width="688" alt="image" src="https://user-images.githubusercontent.com/49013231/183496090-3bcb2386-e55d-4814-b9cf-c86c72a46bec.png">
 
 To create a image:
  - **docker build -t image-name  path-to-directory-with-dockerfile**
@@ -18,7 +17,13 @@ docker build -t api_image .
 
 To run a container: 
 ```
-docker run --name react-container1 dockerize-react-app_client
+docker run --name api_container1 -p 8080:8080  api_image
+```
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/49013231/183501237-7371d2aa-5a90-4ca1-9176-596cfd5f8ceb.png">
+
+To stop a container: 
+```
+docker stop api_container1
 ```
 
 
