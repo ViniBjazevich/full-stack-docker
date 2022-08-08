@@ -22,6 +22,8 @@ docker pull image_name_here
 ```
 <img width="1281" alt="image" src="https://user-images.githubusercontent.com/49013231/183328841-48aee81c-874b-49eb-b5ab-a8dc893ec36e.png">
 
+When a image is ran a container is made from that image:
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/49013231/183329207-ef9045fe-7fae-43ac-9a54-ff3f214ef342.png">
 
 ### Containers (box to run app with everything it needs)
 Containers run independently from any of the processes on your computer:
