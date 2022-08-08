@@ -1,5 +1,26 @@
 # full-stack-docker
-## Docker basics
+## Docker Terminal Commands
+List all docker images:
+```
+docker images
+```
+List all docker images:
+```
+docker images
+```
+![image](https://user-images.githubusercontent.com/49013231/183492499-bb596cf7-b1d3-43de-8015-6c1659c167db.png)
+
+To run a container: 
+```
+docker run --name react-container1 dockerize-react-app_client
+```
+
+To create a image:
+ - **docker build -t image-name path-to-directory-with-dockerfile**
+```
+docker build -t myApp .
+```
+## Docker Basics
 ### Images (blueprints for containers)
 Images contain the following:
 - runtime environment
