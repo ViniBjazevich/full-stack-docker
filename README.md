@@ -11,6 +11,18 @@ Images contain the following:
 
 <img width="1007" alt="image" src="https://user-images.githubusercontent.com/49013231/183326854-036303b4-a427-490c-a24a-75840a0a96ba.png">
 
+Parent images:
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/49013231/183328138-95178739-358b-4e42-b33b-6d308a69e0f9.png">
+
+You can get docker images from docker hub: https://hub.docker.com/search?q=
+
+To get new images run:
+```
+docker pull image_name_here
+```
+<img width="1281" alt="image" src="https://user-images.githubusercontent.com/49013231/183328841-48aee81c-874b-49eb-b5ab-a8dc893ec36e.png">
+
+
 ### Containers (box to run app with everything it needs)
 Containers run independently from any of the processes on your computer:
 
