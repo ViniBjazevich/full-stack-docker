@@ -11,7 +11,7 @@ docker images
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/49013231/183496090-3bcb2386-e55d-4814-b9cf-c86c72a46bec.png">
 
 To create a image:
- - **docker build -t image-name path-to-directory-with-dockerfile**
+ - **docker build -t image-name  path-to-directory-with-dockerfile**
 ```
 docker build -t api_image .
 ```
