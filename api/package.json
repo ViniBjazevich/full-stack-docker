@@ -1,0 +1,23 @@
+{
+  "name": "docker-fullstack",
+  "version": "1.0.0",
+  "description": "Images contain the following: - runtime environment - application code - any dependencies - extra configuration (env variables) - commands - own file system independent from computer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniBjazevich/full-stack-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniBjazevich/full-stack-docker/issues"
+  },
+  "homepage": "https://github.com/ViniBjazevich/full-stack-docker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
