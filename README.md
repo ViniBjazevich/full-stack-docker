@@ -15,20 +15,23 @@ To create a image:
 docker build -t api_image .
 ```
 
-To run a container: 
+To create a container: 
 - --name gives the container its name
 - -p allows you to map a localhost port to the container port
 - -d allows you to run the container detatched from the terminal (you can still run commands in the terminall while the container is running)
 ```
 docker run --name api_container1 -p 8080:8080 -d api_image
 ```
-<img width="893" alt="image" src="https://user-images.githubusercontent.com/49013231/183501237-7371d2aa-5a90-4ca1-9176-596cfd5f8ceb.png">
 
 To stop a container: 
 ```
 docker stop api_container1
 ```
 
+To start a existing container: 
+```
+docker start api_container1
+```
 
 ## Docker Basics
 ### Images (blueprints for containers)
