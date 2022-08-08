@@ -10,3 +10,6 @@ Images contain the following:
 - own file system independent from computer
 
 <img width="1007" alt="image" src="https://user-images.githubusercontent.com/49013231/183326854-036303b4-a427-490c-a24a-75840a0a96ba.png">
+
+### Containers (box to run app with everything it needs)
+Containers run independently from any of the processes on your computer:
