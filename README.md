@@ -17,8 +17,9 @@ Parent images:
 You can get docker images from docker hub: https://hub.docker.com/search?q=
 
 To get new images run:
-```
 docker pull image_name_here
+```
+docker pull node
 ```
 <img width="1281" alt="image" src="https://user-images.githubusercontent.com/49013231/183328841-48aee81c-874b-49eb-b5ab-a8dc893ec36e.png">
 
@@ -30,8 +31,10 @@ When a image is ran a container is made from that image:
 ![image](https://user-images.githubusercontent.com/49013231/183332980-c0724bcc-9fd6-49f4-a780-ff63f52cc376.png)
 
 After a Dockerfile is created, you can run this command to create an image:
-```
 docker build -t image-name path-to-directory-with-dockerfile
+
+```
+docker build -t myApp .
 ```
 
 
