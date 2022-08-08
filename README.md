@@ -31,7 +31,7 @@ When a image is ran a container is made from that image:
 ![image](https://user-images.githubusercontent.com/49013231/183332980-c0724bcc-9fd6-49f4-a780-ff63f52cc376.png)
 
 After a Dockerfile is created, you can run this command to create an image:
-**docker build -t image-name path-to-directory-with-dockerfile**
+ - **docker build -t image-name path-to-directory-with-dockerfile**
 
 ```
 docker build -t myApp .
@@ -42,6 +42,14 @@ docker build -t myApp .
 Containers run independently from any of the processes on your computer:
 
 <img width="827" alt="image" src="https://user-images.githubusercontent.com/49013231/183327500-d5188c14-c0a6-4f20-bdd2-0ed29d968e7f.png">
+
+To create a new container you need to run an image:
+<img width="1098" alt="image" src="https://user-images.githubusercontent.com/49013231/183465444-5b69e7f8-601c-475c-bcf5-615f07486e28.png">
+
+Here you can give the container a name, choose its ports, and provide environment variables.
+- The left port is our localhost port and the right port is the container port
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/49013231/183465526-a84e6129-69a1-4e80-b7e5-f7de869e83b7.png">
+
 
 ### Overview
 The app can run the same exact way on every machine because the image kept the exact versions of everything we need.
