@@ -27,6 +27,7 @@ When a image is ran a container is made from that image:
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/49013231/183329372-d28c73b4-db8f-4510-a00a-4002998ea19b.png">
 
 ### Dockerfile (set of instructions to create a docker image)
+![image](https://user-images.githubusercontent.com/49013231/183332211-d5902558-170e-4121-a885-b54625ed6f4a.png)
 
 
 ### Containers (box to run app with everything it needs)
