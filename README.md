@@ -1,5 +1,6 @@
 # full-stack-docker
-## Images (blueprints for containers)
+## Docker basics
+### Images (blueprints for containers)
 Images contain the following:
 - runtime environment
 - application code
