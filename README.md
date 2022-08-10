@@ -4,9 +4,13 @@ List all docker images:
 ```
 docker images
 ```
-List all running containers:
+List running containers:
 ```
 docker ps
+```
+List all containers:
+```
+docker ps -a
 ```
 
 To create a image:
