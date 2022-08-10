@@ -37,9 +37,14 @@ To start a existing container:
 docker start api_container1
 ```
 
-To remove an image and all existing containers: 
+To delete an image: 
 ```
-docker image rm api_image -f
+docker image rm api_image
+```
+
+To delete an container: 
+```
+docker container rm api_container1
 ```
 
 ## Docker Basics
