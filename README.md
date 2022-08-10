@@ -37,6 +37,11 @@ To start a existing container:
 docker start api_container1
 ```
 
+To remove an image and all existing containers: 
+```
+docker image rm api_image -f
+```
+
 ## Docker Basics
 ### Images (blueprints for containers)
 Images contain the following:
