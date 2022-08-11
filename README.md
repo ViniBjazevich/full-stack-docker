@@ -60,6 +60,21 @@ Delete all images, containers, and clear cache:
 docker system prune
 ```
 
+To run docker compose file (create all docker images referenced and run containers):
+```
+docker compose up
+```
+
+To stop and delete containers but keep images:
+```
+docker compose down
+```
+
+To delete containers, images, and volumes:
+```
+docker compose down --rmi all -v
+```
+
 ## Docker Basics
 ### Images (blueprints for containers)
 Images contain the following:
@@ -88,6 +103,8 @@ The app can run the same exact way on every machine because the image kept the e
 
 ## Dockerfile (set of instructions to create a docker image)
 ![image](https://user-images.githubusercontent.com/49013231/183332980-c0724bcc-9fd6-49f4-a780-ff63f52cc376.png)
+
+## Docker Compose
 
 
 ## Containers (box to run app with everything it needs)
