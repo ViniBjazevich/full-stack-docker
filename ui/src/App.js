@@ -22,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Users list:</h1>
       {users.map((user) => (
         <User user={user} />
       ))}
