@@ -55,6 +55,11 @@ To delete an container:
 docker container rm api_container1
 ```
 
+Delete all images, containers, and clear cache:
+```
+docker system prune
+```
+
 ## Docker Basics
 ### Images (blueprints for containers)
 Images contain the following:
