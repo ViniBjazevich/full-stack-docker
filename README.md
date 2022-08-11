@@ -23,9 +23,12 @@ To create a container:
 - --name gives the container its name
 - -p allows you to map a localhost port to the container port
 - -d allows you to run the container detatched from the terminal (you can still run commands in the terminall while the container is running)
-- -v creates a volue Ex) -v /Users/vinibjazevich/Code/docker-fullstack/api:/app this maps a folder on our computer to a folder in the container allowing it to pick up changes we make
 ```
 docker run --name api_container1 -p 8080:8080 -d api_image
+```
+- -v creates a volume. This maps a folder on our computer to a folder in the container allowing it to pick up changes we make. The second -v creates an anonymous volume which maps the node_modules in our container to folder managed by docker. This allows us to delete our node_modules locally and not delete our node_modules in our container.
+```
+docker run --name api_container1 -p 8080:8080 -v /Users/vinibjazevich/Code/docker-fullstack/api:/app -v /app/node_modules -d api_image
 ```
 
 To stop a container: 
