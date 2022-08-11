@@ -23,6 +23,7 @@ To create a container:
 - --name gives the container its name
 - -p allows you to map a localhost port to the container port
 - -d allows you to run the container detatched from the terminal (you can still run commands in the terminall while the container is running)
+- -v creates a volue Ex) -v /Users/vinibjazevich/Code/docker-fullstack/api:/app this maps a folder on our computer to a folder in the container allowing it to pick up changes we make
 ```
 docker run --name api_container1 -p 8080:8080 -d api_image
 ```
