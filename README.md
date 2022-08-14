@@ -23,7 +23,7 @@ To create a image:
 docker build -t api_image .
 ```
 
-To create a container: 
+To create a container:
 - --name gives the container its name
 - -p allows you to map a localhost port to the container port
 - -d allows you to run the container detached from the terminal (you can still run commands in the terminall while the container is running)
@@ -35,22 +35,22 @@ docker run --name api_container1 -p 8080:8080 -d api_image
 docker run --name api_container1 -p 8080:8080 -v /Users/vinibjazevich/Code/docker-fullstack/api:/app -v /app/node_modules -d api_image
 ```
 
-To stop a container: 
+To stop a container:
 ```
 docker stop api_container1
 ```
 
-To start a existing container: 
+To start a existing container:
 ```
 docker start api_container1
 ```
 
-To delete an image: 
+To delete an image:
 ```
 docker image rm api_image
 ```
 
-To delete an container: 
+To delete an container:
 ```
 docker container rm api_container1
 ```
@@ -107,7 +107,6 @@ The app can run the same exact way on every machine because the image kept the e
 ## Docker Compose
 <img width="621" alt="image" src="https://user-images.githubusercontent.com/49013231/184558309-e8a2e077-f28c-4b2e-bd1c-c7c9f21d42f8.png">
 
-
 ## Containers (box to run app with everything it needs)
 Containers run independently from any of the processes on your computer:
 
@@ -119,3 +118,10 @@ To create a new container you need to run an image:
 Here you can give the container a name, choose its ports, and provide environment variables.
 - The left port is our localhost port and the right port is the container port
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/49013231/183465526-a84e6129-69a1-4e80-b7e5-f7de869e83b7.png">
+
+## Helpful Articles
+- https://geshan.com.np/blog/2021/12/docker-postgres/
+
+- https://dev.to/mohsenkamrani/run-postgresql-with-docker-locally-and-connect-to-it-with-nodejs-451g
+
+- https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7

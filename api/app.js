@@ -1,4 +1,3 @@
-const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -7,6 +6,10 @@ const port = 8080;
 const { createUser, createUserTable, selectUsers } = require("./db/users");
 
 app.use(cors());
+
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 
 app.get("/createUserTable", createUserTable);
 app.get("/users", selectUsers);
