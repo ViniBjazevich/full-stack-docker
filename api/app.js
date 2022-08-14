@@ -4,25 +4,13 @@ const cors = require("cors");
 const app = express();
 const port = 8080;
 
+const { createUser, createUserTable, selectUsers } = require("./db/users");
+
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-app.get("/vini", (req, res) => {
-  res.send("Vini");
-});
-
-app.get("/bailey", (req, res) => {
-  res.send("bailey");
-});
-
-app.get("/users", (req, res) => {
-  axios.get("https://jsonplaceholder.typicode.com/users")
-    .then(({data}) => res.send(data))
-    .catch((err) => res.send(e))
-});
+app.get("/createUserTable", createUserTable);
+app.get("/users", selectUsers);
+app.get("/createUser", createUser);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

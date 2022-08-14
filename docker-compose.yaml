@@ -18,3 +18,9 @@ services:
       - /app/node_modules
     stdin_open: true
     tty: true
+  db:
+    build: ./db
+    container_name: postgres_container
+    ports:
+      -"5432:5432"
+
