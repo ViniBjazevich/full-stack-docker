@@ -105,6 +105,7 @@ The app can run the same exact way on every machine because the image kept the e
 ![image](https://user-images.githubusercontent.com/49013231/183332980-c0724bcc-9fd6-49f4-a780-ff63f52cc376.png)
 
 ## Docker Compose
+<img width="621" alt="image" src="https://user-images.githubusercontent.com/49013231/184558309-e8a2e077-f28c-4b2e-bd1c-c7c9f21d42f8.png">
 
 
 ## Containers (box to run app with everything it needs)
