@@ -19,6 +19,21 @@ async function createUserTable(req, res) {
   }
 }
 
+async function deleteUserTable(req, res) {
+  const db = await createConnection();
+  const query = `DROP TABLE users;`;
+
+  try {
+    const result = await db.query(query);
+
+    res.send(result.rows);
+    endConnection(db);
+  } catch (e) {
+    console.error(e.stack);
+    res.send(e.stack);
+  }
+}
+
 async function selectUsers(req, res) {
   const db = await createConnection();
   const query = `SELECT * FROM users;`;
@@ -36,15 +51,9 @@ async function selectUsers(req, res) {
 }
 
 async function createUser(req, res) {
+  const { name } = req.body;
   const db = await createConnection();
-  const query = `INSERT INTO users (name)
-    VALUES ('Vini'),
-            ('Bailey'),
-            ('Spock'),
-            ('Gavin'),
-            ('Preston'),
-            ('Elijah')
-    ;`;
+  const query = `INSERT INTO users (name) VALUES ('${name}');`;
 
   try {
     const result = await db.query(query);
@@ -62,4 +71,5 @@ module.exports = {
   createUser,
   createUserTable,
   selectUsers,
+  deleteUserTable,
 };

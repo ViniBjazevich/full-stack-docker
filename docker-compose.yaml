@@ -2,6 +2,7 @@ version: "3.8"
 services:
   api:
     build: ./api
+    image: vinibjazevich/react-fullstack-api
     container_name: api_container
     ports:
       - "8080:8080"
@@ -10,6 +11,7 @@ services:
       - /app/node_modules
   ui:
     build: ./ui
+    image: vinibjazevich/react-fullstack-ui
     container_name: ui_container
     ports:
       - "3000:3000"
